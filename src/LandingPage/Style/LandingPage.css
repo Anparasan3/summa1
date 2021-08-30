@@ -385,7 +385,7 @@ body{
     margin-bottom: auto;
 }
 .Loading img{
-    max-width: 75px;
+    max-width: 60px;
     min-width: 30px;
 }
 .NoData img{

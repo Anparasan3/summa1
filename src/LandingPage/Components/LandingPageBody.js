@@ -16,10 +16,12 @@ export default function LandingPageBody(){
     const queryParams = new URLSearchParams(window.location.search);
     const product = queryParams.get('product');
     let BaseURL = "https://json.extendsclass.com/bin/2c474255b54d"
-    if(product.split('_')[0] === "shoe"){
-        BaseURL = "https://json.extendsclass.com/bin/395db4eba7ff";
-    }else if(product.split('_')[0] === "book"){
-        BaseURL = "https://json.extendsclass.com/bin/fb25314d339a";
+    if(product){
+        if(product.split('_')[0] === "shoe"){
+            BaseURL = "https://json.extendsclass.com/bin/395db4eba7ff";
+        }else if(product.split('_')[0] === "book"){
+            BaseURL = "https://json.extendsclass.com/bin/fb25314d339a";
+        }
     }
 
     const [BigImage, SetBigImage] = useState("");
