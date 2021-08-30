@@ -5,13 +5,22 @@ import SizeComponent from './SizeCompoent';
 import ColorComponent from './ColorComponent';
 import ThumbComponent from './ThumbComponent';
 import TagComponent from './TagComponent';
+import LoadingIcon from '../Sources/LoadingIcon.png';
+import EmptyIcon from '../Sources/EmptyIcon.gif';
 import axios from "axios";
 
-const baseURL = "https://json.extendsclass.com/bin/395db4eba7ff"; //Shoes
-//const baseURL = "https://json.extendsclass.com/bin/fb25314d339a"; //Books
-const Type = "Type3"
-
 export default function LandingPageBody(){
+
+    const Type = "Type3"
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const product = queryParams.get('product');
+    let BaseURL = "https://json.extendsclass.com/bin/2c474255b54d"
+    if(product.split('_')[0] === "shoe"){
+        BaseURL = "https://json.extendsclass.com/bin/395db4eba7ff";
+    }else if(product.split('_')[0] === "book"){
+        BaseURL = "https://json.extendsclass.com/bin/fb25314d339a";
+    }
 
     const [BigImage, SetBigImage] = useState("");
     const [ThumbImage, SetThumbImage] = useState("");
@@ -20,12 +29,11 @@ export default function LandingPageBody(){
     const [ProductJson, SetProductJson] = useState({});
 
     useEffect(() => {
-        axios.get(baseURL).then((response) => {
+        axios.get(BaseURL).then((response) => {
             SetProductJson(response.data);
         });
     },[]);
     
-
     function ThumbNailButtonClicked(data){
         SetBigImage(data);
         SetThumbImage(data);
@@ -33,7 +41,7 @@ export default function LandingPageBody(){
     
     if(ProductJson.responseCode === 0){
         return(
-            <div className="LandingPageBody" key={ProductJson.responseData.productId}>
+            <div className="LandingPageBody">
                 <div className="LandingPageBodyLeft">
                     { Type === "Type3" ? <ThumbComponent Product={ProductJson.responseData} ThumbImage={ThumbImage} ThumbNailButtonClicked={ThumbNailButtonClicked} Flex="Vertical"/> : <div/> }
                     <div className="LandingPageBodyImageAndColor">
@@ -88,7 +96,22 @@ export default function LandingPageBody(){
         )
     }else{
         return(
-            <div>404 Not found</div>
+            ProductJson.responseCode ? 
+                <div className="LandingPageBody">
+                    <div className="NoData">
+                        <img src={EmptyIcon} alt="LoadingIcon" />
+                        <br/>
+                        Sorry No Data Found ....
+                    </div>
+                </div>
+                :
+                <div className="LandingPageBody">
+                    <div className="Loading">
+                        <img src={LoadingIcon} alt="LoadingIcon" />
+                        <br/>
+                        Loading Data.....
+                    </div>
+                </div>
         )
     }
 

@@ -3,7 +3,6 @@ import React from 'react';
 export default function ThumbComponent(Props){
     return(
         <div className={Props.Flex === "Vertical" ? "LandingPageBodyThumbVertical" : "LandingPageBodyThumbHorizontal"}>
-            {console.log("Len of Thumb : ",Props.Product.productImagePath.length)}
             {
                 Props.Product.productImagePath.length > 1 ?
                     Props.Product.productImagePath.map((images) => {
