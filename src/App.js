@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import LandingPage from './LandingPage/LandingPage'
+import LandingPage from './LandingPage/LandingPageMain'
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = "UA-206074598-1";

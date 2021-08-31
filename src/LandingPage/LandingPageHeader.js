@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Style/LandingPage.css';
+import './Style/LandingPageHeader.css';
 
 export default class LandingPageHeader extends React.Component{
     render(){

@@ -1,0 +1,46 @@
+.LandingPageFooter{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #626262;
+    justify-content: space-between;
+    padding: 10px;
+}
+.LandingPageFooterLeft{
+    margin: 20px;
+}
+.FooterLeftName{
+    color: #ffffff; 
+}
+.FooterLeftAddress{
+    color: #dedede;
+}
+.FooterLeftCopyRights{
+    color: #dedede;
+}
+.LandingPageFooterMiddle{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.FooterMiddleHref{
+    color: #ffffff;
+    text-decoration: none;
+}
+.LandingPageFooterRight{
+    margin: 20px;
+    padding-right: 40px;
+}
+.FooterRightIcon{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (max-width: 300px){
+    .FooterRightIcon{
+        width: 24px;
+    }
+}
+.FooterRightIcon:hover{
+    cursor: pointer;
+}

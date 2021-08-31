@@ -1,9 +1,9 @@
 import React from 'react';
-import '../Style/LandingPage.css';
-import TwitterIcon from '../Sources/TwitterIcon.png';
-import FacebookIcon from '../Sources/FacebookIcon.png';
-import LinkedinIcon from '../Sources/LinkedinIcon.png';
-import SkypeIcon from '../Sources/SkypeIcon.png';
+import './Style/LandingPageFooter.css';
+import TwitterIcon from './Sources/TwitterIcon.png';
+import FacebookIcon from './Sources/FacebookIcon.png';
+import LinkedinIcon from './Sources/LinkedinIcon.png';
+import SkypeIcon from './Sources/SkypeIcon.png';
 
 export default class LandingPageFooter extends React.Component{
     render(){

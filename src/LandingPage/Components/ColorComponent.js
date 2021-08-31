@@ -17,6 +17,13 @@ const Button = styled.button`
         width: 25px;
         height: 25px;
     }
+    @media (max-width: 350px){
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+    }
 `;
 
 export default function ColorComponent(Props){

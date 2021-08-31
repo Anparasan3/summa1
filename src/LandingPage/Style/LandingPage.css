@@ -16,21 +16,27 @@ body{
     }
     body .LandingPageBodyPrize{
         font-size: 19px;
+        font-size: 20px;
     }
     body .LandingPageBodyType{
         font-size: 18px;
     }
-    body .LandingPageHeader{
+    /* body .LandingPageHeader{
         width: 100%;
         min-height: 70px;
         max-height: 80px;
     }
     body .LandingPageHeaderText h1{
+        padding-left: 0%;
         font-size: 25px;
         text-align: center;
-    }
+    } */
     body .AddToCardAndVisitWebsiteInnerDiv{
         width: 45%;
+    }
+    body .NoData img{
+        max-width: 250px;
+        min-width: 30px;
     }
 }
 .LandingPageMain{
@@ -38,7 +44,7 @@ body{
     flex-direction: column;
     width: 100%;
 }
-.LandingPageHeader{
+/* .LandingPageHeader{
     width: 100%;
     min-height: 100px;
     height: 10vh;
@@ -48,7 +54,7 @@ body{
     color: #ffffff;
     font-size: 35px;
     padding-left: 6%;
-}
+} */
 .LandingPageBody{
     width: 100%;
     display: flex;
@@ -57,17 +63,21 @@ body{
     padding-bottom: 5vh;
     min-height:82vh;
 }
-@media (max-width: 1000px){
+@media (max-width: 900px){
     .LandingPageBody{
         flex-wrap: wrap;
     }
 }
 .LandingPageBodyLeft{
-    max-width: 600px;
-    min-width: 270px;
+    width: 50ch;
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
+}
+@media (max-width: 350px){
+    .LandingPageBodyLeft{
+        min-width: 240px;
+    }
 }
 .LandingPageBodyThumbVertical{
     display: flex;
@@ -124,13 +134,16 @@ body{
     margin-right: 17px;
 }
 .LandingPageBodyRight{
-    max-width: 600px;
-    min-width: 270px;
+    width: 50ch;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 20px;
+}@media (max-width: 350px){
+    .LandingPageBodyRight{
+        min-width: 240px;
+    }
 }
 .LandingPageBodyRightHead{
     display: flex;
@@ -150,7 +163,7 @@ body{
     font-weight: 400;
 }
 .LandingPageBodyPrize{
-    min-width: 140px;
+    min-width: 100px;
     text-align: right;
     font-size: 22px;
     color: #fa1e74;
@@ -178,7 +191,6 @@ body{
     margin-bottom: 5px;
 }
 .LandingPageBodyGeneralQuestion span{
-    /* color: blue; */
     font-weight: 500;
 }
 .LandingPageBodyTag{
@@ -257,6 +269,18 @@ body{
     margin-right: 15px;
     margin-top: 15px;
 }
+@media (max-width: 500px){
+    .LandingPageBodySizeMapActive, .LandingPageBodySizeMap{
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    .LandingPageBodySizeUnderlineMapActive, .LandingPageBodySizeUnderlineMap{
+        width: 35px;
+        height: 3px;
+        margin-right: 10px;
+    }
+}
 .AddToCardAndVisitWebsite{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -288,13 +312,19 @@ body{
     margin-bottom: 10px;
     background-color: white;
 }
-@media (max-width : 700px){
+@media (max-width : 500px){
     .AddToCardAndVisitWebsite{
         justify-content: space-between;
     }
     .LandingPageBodyAddToCard, .LandingPageBodyVisitWebsite{
         margin: 0%;
         width: 100%;
+    }
+}
+@media (max-width: 350px){
+    body .LandingPageBodyAddToCard, .LandingPageBodyVisitWebsite{
+        font-size: 12px;
+        min-width: 80px;
     }
 }
 .AddToCardAndVisitWebsiteInnerDiv{
@@ -310,7 +340,7 @@ body{
     color: white;
     cursor: pointer;
 }
-.LandingPageFooter{
+/* .LandingPageFooter{
     display: flex;
     flex-wrap: wrap;
     background-color: #626262;
@@ -348,29 +378,14 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+@media (max-width: 300px){
+    .FooterRightIcon{
+        width: 24px;
+    }
+}
 .FooterRightIcon:hover{
     cursor: pointer;
-}
-.ChatbotIcon{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 50px;
-    height: 50px;
-}
-.Chat{
-    position: fixed;
-    right: 80px;
-    bottom: 60px;
-    width: 120px;
-    height: 40px;
-    padding: 7px;
-    background-color: #fa1e74;
-    border-radius: 15px;
-    border: none;
-    color: white;
-    display: none;
-}
+} */
 .Flex{
     display: flex;
     justify-content: space-between;

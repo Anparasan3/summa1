@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import '../Style/LandingPage.css';
-import StarComponent from './StarComponent';
-import SizeComponent from './SizeCompoent';
-import ColorComponent from './ColorComponent';
-import ThumbComponent from './ThumbComponent';
-import TagComponent from './TagComponent';
-import LoadingIcon from '../Sources/LoadingIcon.png';
-import EmptyIcon from '../Sources/EmptyIcon.gif';
+import './Style/LandingPage.css';
+import StarComponent from './Components/StarComponent';
+import SizeComponent from './Components/SizeCompoent';
+import ColorComponent from './Components/ColorComponent';
+import ThumbComponent from './Components/ThumbComponent';
+import TagComponent from './Components/TagComponent';
+import LoadingIcon from './Sources/LoadingIcon.png';
+import EmptyIcon from './Sources/EmptyIcon.gif';
 import axios from "axios";
 
 export default function LandingPageBody(){

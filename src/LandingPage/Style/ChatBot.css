@@ -1,0 +1,20 @@
+.ChatbotIcon{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+}
+.Chat{
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    width: 120px;
+    height: 40px;
+    padding: 7px;
+    background-color: #fa1e74;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    display: none;
+}

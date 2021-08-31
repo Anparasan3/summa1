@@ -1,8 +1,8 @@
 import React from 'react';
 import './Style/LandingPage.css';
-import LandingPageHeader from './Components/LandingHeader';
-import LandingPageBody from './Components/LandingPageBody';
-import LandingPageFooter from './Components/LandingFooter';
+import LandingPageHeader from './LandingPageHeader';
+import LandingPageBody from './LandingPageBody';
+import LandingPageFooter from './LandingPageFooter';
 import Chatbot from './Components/Chatbot';
 
 export default class LandingPage extends React.Component{

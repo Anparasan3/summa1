@@ -1,6 +1,7 @@
 import React from 'react';
 import ChatbotIcon from '../Sources/MessageIcon.png';
-import '../Style/LandingPage.css'
+//import '../Style/LandingPage.css'
+import '../Style/ChatBot.css'
 
 export default function Chatbot(){
 

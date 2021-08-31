@@ -1,0 +1,23 @@
+.LandingPageHeader{
+    width: 100%;
+    min-height: 100px;
+    height: 10vh;
+    background-color: #fa1e74;
+}
+.LandingPageHeaderText h1{
+    color: #ffffff;
+    font-size: 35px;
+    padding-left: 6%;
+}
+@media (max-width: 500px){
+    body .LandingPageHeader{
+        width: 100%;
+        min-height: 70px;
+        max-height: 80px;
+    }
+    body .LandingPageHeaderText h1{
+        padding-left: 0%;
+        font-size: 25px;
+        text-align: center;
+    }
+}
