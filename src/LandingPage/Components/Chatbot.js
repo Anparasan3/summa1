@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ChatbotIcon from '../Sources/MessageIcon.png';
-//import '../Style/LandingPage.css'
 import '../Style/ChatBot.css'
 
 export default function Chatbot(){
 
+    const [ChatBox, SetChatBox] = useState(false)
+
     function ShowChat(){
-        console.log("ShowChat");
-        var chat = document.getElementById("Chat");
-        if (chat.style.display === "none") {
-            chat.style.display = "block";
-        } else {
-            chat.style.display = "none";
+        if(ChatBox){
+            SetChatBox(false);
+        }else{
+            SetChatBox(true);
         }
     }
 
     return(
         <div className="Chatbot">
             <img src={ChatbotIcon} className="ChatbotIcon" onClick={() => ShowChat()} alt="ChatBotIcon"/>
-            <div className="Chat" id="Chat">Hey Hi! How can I help you?</div>
+            <div className={ChatBox ? "ChatVisible" : "ChatInvisible"} >Hey Hi! How can I help you?</div>
         </div>
     )
 }

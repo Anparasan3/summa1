@@ -45,27 +45,31 @@ export default function LandingPageBody(){
         return(
             <div className="LandingPageBody">
                 <div className="LandingPageBodyLeft">
-                    { Type === "Type3" ? <ThumbComponent Product={ProductJson.responseData} ThumbImage={ThumbImage} ThumbNailButtonClicked={ThumbNailButtonClicked} Flex="Vertical"/> : <div/> }
+                    { Type === "Type2" ? <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Mobile" Align="Vertical" Center="Center"/> : <div/> }
+                    { Type === "Type3" ? <ThumbComponent Product={ProductJson.responseData} ThumbImage={ThumbImage} ThumbNailButtonClicked={ThumbNailButtonClicked} Flex="Vertical"/> : "" }
                     <div className="LandingPageBodyImageAndColor">
                         <div className="LandingPageBodyImage">
                             <img src={BigImage==="" ? ProductJson.responseData.productImagePath[0].name : BigImage} className="LandingPageBodyIcon" alt="ProductBigImage"/>
                         </div>
                         { Type === "Type3" ?
-                            <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type}/>
+                            <div>
+                                <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Web"/>
+                                <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Mobile" Center="Center"/>
+                            </div>
                             : 
                             Type === "Type2" ?
                                 <div className="Flex">
                                     <ThumbComponent Product={ProductJson.responseData} ThumbImage={ThumbImage} ThumbNailButtonClicked={ThumbNailButtonClicked} Flex="Horizontal"/>
-                                    <StarComponent Product={ProductJson.responseData}/>
+                                    <StarComponent Product={ProductJson.responseData} View="Web"/>
                                 </div>
                                 :
                                 Type === "Type1" ?
                                     <div>
                                         <div className="Flex">
                                             <TagComponent Product={ProductJson.responseData} />
-                                            <StarComponent Product={ProductJson.responseData}/>
+                                            <StarComponent Product={ProductJson.responseData} View="Web"/>
                                         </div>
-                                        <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type}/>
+                                        <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Web"/>
                                     </div>
                                 :
                                 <div/>
@@ -78,9 +82,13 @@ export default function LandingPageBody(){
                             <div className="LandingPageBodyName">{ProductJson.responseData.productName.toUpperCase()}</div>
                             <div className="LandingPageBodyType">{ProductJson.responseData.type}</div>
                         </div>
-                        <div className="LandingPageBodyPrize">USD {ProductJson.responseData.onlineSellingPrice}$</div>
+                        <div className="LandingPageBodyPrize">
+                            <div className="LandingPageBodyPrizeOld">USD {ProductJson.responseData.ActualPrice}$</div>
+                            <div className="LandingPageBodyPrizeNew">USD {ProductJson.responseData.onlineSellingPrice}$</div>
+                        </div>
                     </div>
-                    { Type === "Type3" ? <StarComponent Product={ProductJson.responseData}/> : <div/> }
+                    { Type === "Type3" ? <StarComponent Product={ProductJson.responseData} View="Web"/> : <div/> }
+                    <StarComponent Product={ProductJson.responseData} View="Mobile"/>
                     <div className="LandingPageBodyDiscription">{ProductJson.responseData.productLongDescription}</div>
                     { ProductJson.responseData.author ? <p className="LandingPageBodyGeneralQuestion"><span>Author Name : </span>{ProductJson.responseData.author}</p> : <div/>}
                     { ProductJson.responseData.Publisher ? <div className="LandingPageBodyGeneralQuestion"><span>Publisher : </span>{ProductJson.responseData.Publisher}</div> : <div/>}
@@ -88,7 +96,8 @@ export default function LandingPageBody(){
                     { ProductJson.responseData.Paperback ? <div className="LandingPageBodyGeneralQuestion"><span>Paperback : </span>{ProductJson.responseData.Paperback}</div> : <div/>}
                     { Type === "Type2" || Type === "Type3" ? <TagComponent Product={ProductJson.responseData} /> : <div/> }
                     { Type === "Type1" || Type === "Type3" ? <SizeComponent Product={ProductJson.responseData} SizeImage={SizeImage} SetSizeImage={SetSizeImage} Type="UnderScore"/> : <SizeComponent Product={ProductJson.responseData} SizeImage={SizeImage} SetSizeImage={SetSizeImage} Type="DropDown"/> }
-                    { Type === "Type2" ? <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type}/> : <div/> }
+                    { Type === "Type2" ? <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Web"/> : <div/> }
+                    { Type === "Type1" ? <ColorComponent Product={ProductJson.responseData} ColorImage={ColorImage} SetColorImage={SetColorImage} Type={Type} View="Mobile"/> : <div/> }
                     <div className="AddToCardAndVisitWebsite">
                         <div className="AddToCardAndVisitWebsiteInnerDiv"><button className="LandingPageBodyAddToCard" onClick={() => alert("Item Added to your card successfully !!!")}>ADD TO CARD</button></div>
                         <div className="AddToCardAndVisitWebsiteInnerDiv"><button className="LandingPageBodyVisitWebsite" onClick={event =>  window.location.href="https://www.openturf.in/"}>VISIT WEBSITE</button></div>

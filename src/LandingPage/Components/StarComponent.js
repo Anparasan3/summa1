@@ -5,7 +5,7 @@ export default function StarComponent(Props){
         <div>
             {
                 Props.Product.starRating ?
-                    <div className="LandingPageBodyRating">
+                    <div className={"LandingPageBodyRating"+Props.View}>
                         <span className={Props.Product.starRating >= 1 ? "fa fa-star checked" : "fa fa-star unchecked"}></span>
                         <span className={Props.Product.starRating >= 2 ? "fa fa-star checked" : "fa fa-star unchecked"}></span>
                         <span className={Props.Product.starRating >= 3 ? "fa fa-star checked" : "fa fa-star unchecked"}></span>
@@ -17,13 +17,3 @@ export default function StarComponent(Props){
         </div>
     )
 }
-
-// import React from 'react';
-
-// export default function Component(){
-//     return(
-//         <div>
-            
-//         </div>
-//     )
-// }
