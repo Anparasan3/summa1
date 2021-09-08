@@ -1,0 +1,80 @@
+{
+    "responseCode": 0,
+    "responseMessage": "Success",
+    "responseData": {
+        "productBatchId": 5468,
+        "productId": 5296,
+        "productName": "Men's Formal Shirt",
+        "type": "Diverse Men's Regular Formal Shirt",
+        "onlineSellingPrice": "7.14",
+        "ActualPrice": "10",
+        "measuringUnitName": "No.",
+        "starRating": 3,
+        "productLongDescription": "Care Instructions: Machine wash warm, wash dark colors separately, do not bleach, tumble dry low, warm iron Fit Type: Regular <br/> Material - 100% Cotton <br/> Regular fit and Full sleeve shirt <br/> Collar style - Classic collar; Cuff style - Single cuff <br/> Pattern: Solid Men’s Formal Shirt <br/> French placket <br/> Machine wash warm, wash dark colors separately, do not bleach, tumble dry low, warm iron",
+        "tag": [
+            {
+                "name": "cotton"
+            },
+            {
+                "name": "Mens shirt"
+            },
+            {
+                "name": "Formal"
+            }
+        ],
+        "size": [
+            {
+                "name": 39
+            },
+            {
+                "name": 40
+            },
+            {
+                "name": 42
+            },
+            {
+                "name": 44
+            },
+            {
+                "name": 46
+            },
+            {
+                "name": 48
+            }
+        ],
+        "color": [
+            {
+                "name": "black"
+            },
+            {
+                "name": "white"
+            },
+            {
+                "name": "brown"
+            },
+            {
+                "name": "pink"
+            },
+            {
+                "name": "yellow"
+            }
+        ],
+        "productImagePath": [
+            {
+                "name": "https://m.media-amazon.com/images/I/81OXbTSd-GL._UL1500_.jpg"
+            },
+            {
+                "name": "https://m.media-amazon.com/images/I/8130vBNcNSL._UL1500_.jpg"
+            },
+            {
+                "name": "https://m.media-amazon.com/images/I/818H9KapstL._UL1500_.jpg"
+            },
+            {
+                "name": "https://m.media-amazon.com/images/I/71Smi+JKQML._UL1500_.jpg"
+            },
+            {
+                "name": "https://m.media-amazon.com/images/I/714y+-lm6KL._UL1500_.jpg"
+            }
+        ]
+    }
+}

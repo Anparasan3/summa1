@@ -21,6 +21,8 @@ export default function LandingPageBody(){
             BaseURL = "https://json.extendsclass.com/bin/395db4eba7ff";
         }else if(product.split('_')[0] === "book"){
             BaseURL = "https://json.extendsclass.com/bin/fb25314d339a";
+        }else if(product.split('_')[0] === "shirt"){
+            BaseURL = "https://json.extendsclass.com/bin/fd2710375221";
         }
     }
 
