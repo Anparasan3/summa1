@@ -1,0 +1,14 @@
+.fa{ padding-right: 5px; }
+@media only screen and (max-width:600px) {
+    .fa{
+        font-size: 12px;
+    }
+}
+@media (max-width:403px) {
+    .fa{ font-size: 11px;}
+}
+@media (max-width:300px) {
+    .fa{
+        font-size: 9px;
+    }
+}

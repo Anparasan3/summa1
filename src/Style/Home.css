@@ -1,0 +1,58 @@
+.Home-Container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    /* background-color: rgb(218, 246, 237); */
+    /* background: linear-gradient(-45deg, white 30%, blue 0%); */
+    background: linear-gradient(-45deg, white 5%, rgb(71, 79, 195));
+}
+.Home-Container h1{
+    padding-top: 7%;
+}
+.Home-Product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Home-Shoes{
+    margin: 15px 50px;
+    color: rgb(46, 43, 226);
+    cursor: pointer;
+    text-decoration: none;
+}
+.Home-Shoes :hover{
+    color:rgb(234, 0, 255);
+}
+.products-link{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgb(111, 137, 250);
+    background: linear-gradient(+45deg, lightblue 2%, rgb(111, 137, 250));
+    border-radius: 8px;
+}
+.products-link:hover{
+    border: 1px solid rgb(132, 174, 230);
+    transform: scale(1.15);
+}
+
+
+/* . . . . Search . . . . */
+.loading{
+    width: 100%;
+    min-height: 100vmax;
+    background-color: rgba(212, 220, 245, 0.555);
+    text-align: center;
+    margin: 0;
+}
+.loading h1{
+    padding-top: 50px;
+}
+.loading h2{
+    margin: 50px;
+    padding-top: 50px;
+}
+.selection{
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+.Colors{
+    padding: 10px 0px 2px 0px;
+    display: flex;
+    align-content: flex-start;
+}
+.Color-name{
+    padding-top: 4px;
+    display: flex;
+}
+.colorButtonDiv{
+    display: flex;
+    padding-left: 10px;
+}
+
+@media (max-width:510px){
+    .colorButtonDiv{
+        padding-left: 0px;
+    }
+}
+
+/* - - - StarRate - - - */
+.checked{
+    color: #fa1e74;
+}

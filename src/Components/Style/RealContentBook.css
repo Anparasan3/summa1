@@ -1,0 +1,111 @@
+.books-container{
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.books-container::after{
+    /* justify-content: space-between; */
+    /* margin: 50px; */
+    /* content: " "; */
+    /* width: 0px; */
+    /* flex: auto;  */
+}
+.books-content{
+    width: 260px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    height: auto;
+}
+.booksName{
+    width: 100%;
+    text-align: left;
+    font-size: calc( 0.5vw + 0.75rem );
+}
+.bookMoney{
+    min-width: 68px;
+    padding-top: 8px;
+    font-size: calc(0.5vw + 1rem);
+    color: #fa1e74;
+}
+@media (max-width:897px) {
+    .books-content{
+        width: 230px;
+    }
+}
+@media (max-width:813px) {
+    .books-content{
+        width: 210px;
+    }
+}
+@media (max-width:622px) {
+    .books-content{
+        width: 200px;
+    }
+}
+@media (max-width:503px) {
+    .books-content{
+        width: 180px;
+    }
+}
+@media (max-width:461px) {
+    .books-content{
+        width: 160px;
+    }
+    .books-container{
+        justify-content: space-between;
+    }
+}
+@media (max-width:380px) {
+    .books-content{
+        width: 140px;
+    }
+    .bookMoney{
+        min-width: 62px;
+    }
+}
+@media (max-width:340px) {
+    .books-content{
+        width: 120px;
+    }
+    .booksName{
+        max-width: 80px;
+        font-size: 12px;
+    }
+    .bookMoney{
+        min-width: 50px;
+        font-size: 13px;
+    }
+}
+@media (max-width:300px) {
+    .books-content{
+        width: 110px;
+    }
+    .booksName{
+        max-width: 80px;
+        font-size: 12px;
+    }
+    .bookMoney{
+        min-width: 45px;
+        font-size: 13px;
+        padding-right: 0px;
+    }
+}
+.productImage-books{
+    width: 100%;
+    height: 50%;
+}
+.productImage-books:hover{
+    transform: scale(1.09);
+}
+.rank{
+    width: 100%;
+    font-size: calc( 0.5vw + 0.6rem );
+    text-align: left;
+}
+.author{
+    width: 100%;
+    text-align: left;
+    font-size: calc( 0.5vw + 0.6rem );
+}
