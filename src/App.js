@@ -2,7 +2,10 @@ import './Style/App.css';
 import { BrowserRouter as Router ,Switch, Route } from 'react-router-dom';
 import React from 'react';
 import Home from './Home.js';
-import Main from './Components/Main'
+import Main from './Components/Main';
+
+import Chat from './Chat/Chat';
+import './Chat/Chat.css';
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
           <Route path='/plugin-content/search' component={Main} />
         </Switch>
       </Router>
+      <Chat />
     </div>
   );
 }

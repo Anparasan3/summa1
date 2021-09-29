@@ -1,0 +1,56 @@
+.chatIcon{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.far.fa-comment-alt{
+    font-size: 50px;
+    color: #fa1e74;
+    text-shadow: 6px 6px 1px 1px rgba(0, 0, 255, .2);
+}
+.MessageIcon{
+    width: 50px;
+    height: 50px;
+    color: #fa1e74;
+}
+/* .Message{
+    position: fixed;
+    display: none;
+    right: 110px;
+    bottom: 58px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    background-color: #fa1e74;
+} */
+
+.chatcontainer{
+    display: none;
+    position: fixed;
+    right: 80px;
+    bottom: 70px;
+    width: 23vw;
+    min-width: 250px;
+    max-width: 300px;
+    height: auto;
+    padding: 4px;
+    background-color: #fa1e726c;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.chatroom { height: 60vh !important; }
+.chatroom h3 { background-color: #fa1e74 !important; }
+.chatroom .chats .chat-buttons .chat-button { background-color: #fa1e74 !important; }
+.chatroom .input { background-color: #fa1e74 !important; }
+.chatroom .input input[type=submit] { background-color: #fa1e74 !important; }
+@media (max-width:356px) {
+    .chatcontainer{
+        right: auto;
+        min-width: 240px;
+        left: 18px;
+        bottom: 85px;
+    }
+}
