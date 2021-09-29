@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ChatbotIcon from "../Sources/MessageIcon.png";
 import "../Style/ChatBot.css";
 
@@ -13,6 +13,12 @@ export default function Chatbot() {
     }
   }
 
+  if(ChatBox){
+    document.getElementById('chat-container').style.display = "block"
+  }else{
+    document.getElementById('chat-container').style.display = "none"
+  }
+
   return (
     <div className="Chatbot">
       <img
@@ -21,9 +27,6 @@ export default function Chatbot() {
         onClick={() => ShowChat()}
         alt="ChatBotIcon"
       />
-      <div className={ChatBox ? "ChatVisible" : "ChatInvisible"}>
-        Hey Hi! How can I help you?
-      </div>
     </div>
   );
 }

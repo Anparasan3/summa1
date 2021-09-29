@@ -12,7 +12,8 @@
     position: fixed;
     right: 80px;
     bottom: 60px;
-    max-width: 120px;
+    max-width: 250px;
+    height: 400px;
     padding: 5px;
     background-color: #fa1e74;
     border-radius: 10px;

@@ -1,0 +1,30 @@
+.chatcontainer{
+    display: none;
+    position: fixed;
+    right: 80px;
+    bottom: 60px;
+    width: 23vw;
+    min-width: 190px;
+    max-width: 300px;
+    height: auto;
+    padding: 4px;
+    background-color: #fa1e726c;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+.chatroom{
+    height: 60vh !important;
+}
+.chatroom h3{
+    background-color: #fa1e74 !important;
+}
+.chatroom .chats .chat-buttons .chat-button{
+    background-color: #fa1e74 !important;
+}
+.chatroom .input{
+    background-color: #fa1e74 !important;
+}
+.chatroom .input input[type=submit]{
+    background-color: #fa1e74 !important;
+}
